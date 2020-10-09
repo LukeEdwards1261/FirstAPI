@@ -19,6 +19,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class SeleniumTestDelete {
 	
+	//ATTENTION, iN ORDER FOR ALL SELENIUM TESTS TO WORK, A SINGLE ENTRY MUST BE ADDED FIRST OR FOR THEM TO BE RAN IN ORDER (SEE @TEST(POSITION) FOR THE ORDER), THIS CAN BE DONE WITHIN THE HTML PAGE OR VIA POSTMAN
+	
 
     private static WebDriver driver;
     
@@ -37,7 +39,7 @@ public class SeleniumTestDelete {
     }
 
     @Test
-    @Order(3)
+    @Order(3) // THIRD
     public void test() throws InterruptedException {
         driver.get("http://127.0.0.1:5500/html/October2020.html");
         Thread.sleep(3000);
